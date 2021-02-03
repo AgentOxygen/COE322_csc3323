@@ -1,0 +1,142 @@
+[
+  {
+    "head": "lion",
+    "body": "kid-hare",
+    "arms": 10,
+    "legs": 10,
+    "tails": 20
+  },
+  {
+    "head": "bull",
+    "body": "husky-fowl",
+    "arms": 5,
+    "legs": 5,
+    "tails": 10
+  },
+  {
+    "head": "bunny",
+    "body": "shark-pup",
+    "arms": 10,
+    "legs": 5,
+    "tails": 15
+  },
+  {
+    "head": "snake",
+    "body": "lark-pig",
+    "arms": 3,
+    "legs": 7,
+    "tails": 10
+  },
+  {
+    "head": "bull",
+    "body": "crane-lark",
+    "arms": 6,
+    "legs": 3,
+    "tails": 9
+  },
+  {
+    "head": "lion",
+    "body": "martin-feline",
+    "arms": 2,
+    "legs": 12,
+    "tails": 14
+  },
+  {
+    "head": "bunny",
+    "body": "fox-grouse",
+    "arms": 7,
+    "legs": 12,
+    "tails": 19
+  },
+  {
+    "head": "raven",
+    "body": "oriole-mite",
+    "arms": 10,
+    "legs": 9,
+    "tails": 19
+  },
+  {
+    "head": "lion",
+    "body": "deer-kite",
+    "arms": 7,
+    "legs": 4,
+    "tails": 11
+  },
+  {
+    "head": "snake",
+    "body": "skunk-tuna",
+    "arms": 7,
+    "legs": 9,
+    "tails": 16
+  },
+  {
+    "head": "raven",
+    "body": "raptor-mullet",
+    "arms": 5,
+    "legs": 11,
+    "tails": 16
+  },
+  {
+    "head": "lion",
+    "body": "iguana-baboon",
+    "arms": 6,
+    "legs": 5,
+    "tails": 11
+  },
+  {
+    "head": "bunny",
+    "body": "chow-owl",
+    "arms": 4,
+    "legs": 10,
+    "tails": 14
+  },
+  {
+    "head": "bunny",
+    "body": "turtle-rabbit",
+    "arms": 9,
+    "legs": 10,
+    "tails": 19
+  },
+  {
+    "head": "raven",
+    "body": "tomcat-bee",
+    "arms": 3,
+    "legs": 9,
+    "tails": 12
+  },
+  {
+    "head": "bunny",
+    "body": "jay-falcon",
+    "arms": 6,
+    "legs": 10,
+    "tails": 16
+  },
+  {
+    "head": "lion",
+    "body": "aphid-minnow",
+    "arms": 8,
+    "legs": 4,
+    "tails": 12
+  },
+  {
+    "head": "raven",
+    "body": "satyr-magpie",
+    "arms": 10,
+    "legs": 12,
+    "tails": 22
+  },
+  {
+    "head": "raven",
+    "body": "ghoul-leech",
+    "arms": 9,
+    "legs": 11,
+    "tails": 20
+  },
+  {
+    "head": "bunny",
+    "body": "muskox-beagle",
+    "arms": 8,
+    "legs": 7,
+    "tails": 15
+  }
+]
