@@ -93,4 +93,4 @@ def addName(animal:dict) -> str:
     return (first_word + " " + second_word).lower()
 
 if __name__ == "__main__":
-    getAnimals(sys.argv)
+    getAnimals(sys.argv[1])
