@@ -6,7 +6,7 @@ COE 322 Homework 02
 """
 
 import unittest
-from generate_animals import addName
+from read_animals import addName
 from generate_animals import genAnimal
 
 class TestNames(unittest.TestCase):
@@ -18,15 +18,15 @@ class TestNames(unittest.TestCase):
         # Test Case 1
         test_animal['head'] = "snake"
         test_animal['body'] = "bull-lion"
-        self.assertEqual(addName(test_animal)['name'], "snakeous bion")
+        self.assertEqual(addName(test_animal), "snakeous bion")
         # Test Case 2
         test_animal['head'] = "Snake"
         test_animal['body'] = "Bull-Lion"
-        self.assertEqual(addName(test_animal)['name'], "snakeous bion")
+        self.assertEqual(addName(test_animal), "snakeous bion")
         # Test Case 3
         test_animal['head'] = "sNaKe"
         test_animal['body'] = "bUlL-lIoN"
-        self.assertEqual(addName(test_animal)['name'], "snakeous bion")
+        self.assertEqual(addName(test_animal), "snakeous bion")
         # Test Case 4
         test_animal['head'] = "snake"
         test_animal['body'] = "bull"
