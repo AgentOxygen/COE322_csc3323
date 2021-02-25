@@ -1,4 +1,4 @@
-#usr/bin/env python3
+#!/usr/bin/env python3
 """
 COE 322 Homework 01 Updated for Homework 02
 
