@@ -46,7 +46,7 @@ docker run --rm -v $PWD:/data user/homework02 generate_animals.py "/data/file_na
 ```
 To read a JSON file, run the container with the following and specify the path in `"file_name.json"`
 ```sh
-docker run --rm -v $PWD:/data user/homework02 generate_animals.py "/data/file_name.json"
+docker run --rm -v $PWD:/data user/homework02 read_animals.py "/data/file_name.json"
 ```
 ## How to Run Unit Tests
 To run the unit tests, run the container with the following
