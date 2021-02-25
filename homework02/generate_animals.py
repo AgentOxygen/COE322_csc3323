@@ -8,6 +8,7 @@ COE 322 Homework 01 Updated for Homework 02
 import json
 import petname as pn
 import random as rand
+import sys
 
 def getRandMultiple(min_rand:int, max_rand:int, fact_rand:int) -> int:
     """
@@ -95,4 +96,4 @@ def genAnimalsJSON(num_of_animals:int, path:str) -> None:
         json.dump(animals, output, indent=2)
                 
 if __name__ == "__main__":
-    genAnimalsJSON(20, "animals.json")
+    genAnimalsJSON(20, sys.argv[1])
