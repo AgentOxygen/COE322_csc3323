@@ -9,7 +9,7 @@ import requests
 import sys
 
 if __name__ == '__main__':
-    response = requests.get(url=sys.argsv)
+    response = requests.get(url=sys.argv)
     print(response.status_code)
     print(response.json())
     print(response.headers)
