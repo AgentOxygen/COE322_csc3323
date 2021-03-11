@@ -34,7 +34,7 @@ Download this repo using git. It will give you access to my other homeworks, but
 ## How to Build
 Contained in `/homework02` is a `Dockerfile` which we will use to build the project. Use the `docker build` command to build:
 ```sh
-cd /csc3323_coe332/homework02/
+cd csc3323_coe332/homework02/
 docker build -t username/homework02 .
 ```
 This will build the container and make it locally accessible. Use `docker images` to view the container.
@@ -46,7 +46,7 @@ docker run --rm -v $PWD:/data user/homework02 generate_animals.py "/data/file_na
 ```
 To read a JSON file, run the container with the following and specify the path in `"file_name.json"`
 ```sh
-docker run --rm -v $PWD:/data user/homework02 generate_animals.py "/data/file_name.json"
+docker run --rm -v $PWD:/data user/homework02 read_animals.py "/data/file_name.json"
 ```
 ## How to Run Unit Tests
 To run the unit tests, run the container with the following
