@@ -1,3 +1,10 @@
+#!/usr/bin/env python3
+"""
+COE 322 Homework 03
+
+@author: Cameron Cummins
+"""
+
 from flask import Flask
 import json
 app = Flask(__name__)
