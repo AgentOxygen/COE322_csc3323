@@ -16,7 +16,16 @@ def getAnimals():
     return json.dumps(userdata, sort_keys = True, indent = 4)
 
 @app.route('/animals/<string:body_part>/<string:var>', methods=['GET'])
-def filterAnimals(body_part, var):
+def filterTypeAnimals(body_part, var):
+    ret_animals = []
+    with open("animals.json", "r") as json_file:
+        for animal in json.load(json_file):
+            if animal[body_part] == var:
+                ret_animals.append(animal)
+    return str(ret_animals)
+
+@app.route('/animals/<string:body_part>/<int:var>', methods=['GET'])
+def filterIntAnimals(body_part, var):
     ret_animals = []
     with open("animals.json", "r") as json_file:
         for animal in json.load(json_file):
