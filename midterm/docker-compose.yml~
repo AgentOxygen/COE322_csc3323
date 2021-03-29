@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+    web:
+        build: .
+        container_name: oxygen-web
+        ports:
+           - 5007:5000
+        volumes:
+           - ./data/app.py:/app.py
+           - ./data/data_requester.py:/data_requester.py
+           - ./data/generate_animals.py:/generate_animals.py
+           - ./data/read_animals.py:/read_animals.py
+    redis:
+        image: redis:latest
+        container_name: oxygen-redis
+        ports:
+            - 6387:6379
+        volumes:
+            - ./config/redis.conf:/redis.conf
+        command: ["redis-server", "/redis.conf"]
