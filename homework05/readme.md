@@ -1,4 +1,7 @@
-# Part A:
+# Homework 5
+Cameron Cummins (csc3323)
+
+## Part A
 
 1. The yaml file is `partA-pod.yml` and the command used was `kubectl -f apply partA-pod.yml`
 2. Using the command `kubectl get pods --selector "greeting"~ outputs the following:
@@ -10,7 +13,7 @@ hello   1/1     Running   0          5m10s
 4. I deleted the pod using `kubectl delete pods hello`
 
 
-# Part B:
+## Part B
 
 1. The yaml file is `partB-pod.yml` and the command used was `kubectl -f apply partB-pod.yml`
 2. Using the command `kubectl get pods --selector "greeting"` outputs the following:
@@ -21,7 +24,7 @@ hello   1/1     Running   0          3m22s
 3. Using the commande `kubectl logs hello` returns the output `Hello, Cameron!`
 4. I deleted the pod using `kubectl delete pods hello`
 
-# Part C:
+## Part C
 
 1. The yaml file is `partC-deployment.yml` and the command used was `kubectl -f apply partC-deployment.yml`
 2. Using `kubectl get pods -o wide` outputs the following:
