@@ -10,3 +10,6 @@ spec:
     - name: hello
       image: ubuntu:18.04
       command: ['sh', '-c', 'echo "Hello, $NAME!" && sleep 3600']
+      env:
+      - name: NAME
+        value: "Cameron"
