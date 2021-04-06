@@ -18,11 +18,10 @@
 	1. The yaml file is `partB-pod.yml` and the command used was `kubectl -f apply partB-pod.yml`
 <br>
 	2. Using the command `kubectl get pods --selector "greeting"` outputs the following:
-> <br> ```
-> NAME    READY   STATUS    RESTARTS   AGE
-> <br>
-> hello   1/1     Running   0          3m22s
-> ```
+```
+	NAME    READY   STATUS    RESTARTS   AGE
+	hello   1/1     Running   0          3m22s
+```
 <br>
 	3. Using the commande `kubectl logs hello` returns the output `Hello, Cameron!`
 <br>
