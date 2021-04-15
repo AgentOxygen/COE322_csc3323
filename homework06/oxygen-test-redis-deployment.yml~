@@ -1,0 +1,31 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: oxygen-test-redis-deployment
+  labels:
+    username: "oxygen"
+    env: "test"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      username: "oxygen"
+      env: "test"
+  template:
+    metadata:
+      labels:
+        username: "oxygen"
+        env: "test"
+        app: "oxygen-test-redis"
+    spec:
+      containers:
+        - name: oxygen-test-redis-container
+          image: redis:5.0.0
+          volumeMounts:
+            - name: oxygen-test-redis-pvc
+              mountPath: "/data"
+      volumes:
+        - name: oxygen-test-pvc
+          persistentVolumeClaim:
+            claimName: oxygen-test-pvc

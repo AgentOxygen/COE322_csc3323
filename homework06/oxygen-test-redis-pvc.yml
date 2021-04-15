@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: oxygen-test-pvc
+  labels:
+    username: "oxygen"
+    env: "test"
+spec:
+  storageClassName: "rbd"
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
