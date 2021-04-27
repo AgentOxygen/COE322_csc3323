@@ -1,0 +1,47 @@
+containers:
+        - name: oxygen-hw7-flask-container
+          imagePullPolicy: Always
+          image: agentoxygen/flask:1.0
+          env:
+            - name: FLASK_APP
+              value: "/app/app.py"
+            - name: REDIS_IP
+              value: "10.103.127.200"
+          ports:
+          - name: http
+            containerPort: 5000
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: oxygen-hw7-flask-deployment
+  labels:
+    username: "oxygen"
+    env: "test"
+    app: "flask-hw7"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      username: "oxygen"
+      env: "test"
+      app: "flask-hw7"
+  template:
+    metadata:
+      labels:
+        username: "oxygen"
+        env: "test"
+        app: "flask-hw7"
+    spec:
+      containers:
+        - name: oxygen-hw7-flask-container
+          imagePullPolicy: Always
+          image: agentoxygen/flask:1.0
+          env:
+            - name: FLASK_APP
+              value: "/app/app.py"
+            - name: REDIS_IP
+              value: "10.103.127.200"
+          ports:
+          - name: http
+            containerPort: 5000

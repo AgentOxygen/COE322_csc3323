@@ -1,0 +1,33 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: oxygen-hw7-worker-deployment
+  labels:
+    username: "oxygen"
+    env: "test"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      username: "oxygen"
+      env: "test"
+  template:
+    metadata:
+      labels:
+        username: "oxygen"
+        env: "test"
+        app: "oxygen-hw7-worker"
+    spec:
+      containers:
+        - name: oxygen-hw7-worker-container
+          imagePullPolicy: Always
+          image: agentoxygen/hw7:latest
+          command: ["python", "worker.py"]
+          env:
+            - name: WORKER_IP
+              valueFrom:
+                fieldRef:
+                  fieldPath: status.podIP  
+            - name: REDIS_IP
+              value: "10.109.252.67"
